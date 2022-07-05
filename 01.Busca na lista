@@ -1,0 +1,14 @@
+#include <stdio.h>
+int pesquisa(tlista l, tdado dado){
+    l->fim= l->ini;
+    
+	if(l->fim!=NULL){
+		if(l->fim == dado){
+	     return 1;	
+	    } else{
+	     	l->fim = l->fim->prox;
+		    
+	}
+  }
+  return 0; 
+}
